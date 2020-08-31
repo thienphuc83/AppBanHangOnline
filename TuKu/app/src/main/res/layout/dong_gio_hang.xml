@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="5dp"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgHinhSPGioHang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/trees_logo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tvTenSPGioHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorGreen3"
+            android:text="Tên sản phẩm"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/tvGiaSPGioHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorOrgan"
+            android:text="Giá sản phẩm"
+            android:textSize="15sp"/>
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnTru"
+                android:layout_width="50dp"
+                android:text="-"
+                android:focusable="false"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnSo"
+                android:background="@null"
+                android:focusable="false"
+                android:layout_width="50dp"
+                android:text="1"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnCong"
+                android:layout_width="50dp"
+                android:text="+"
+                android:focusable="false"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
